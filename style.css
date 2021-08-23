@@ -1,0 +1,76 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  line-height: 2;
+  padding-left: 0;
+}
+
+/* VARIÁVEIS */
+:root {
+  /*CORES*/
+  --hue: 159;
+  /*TIPO DE COR HSL*/
+  --base-color: hsl(var(--hue) 36% 57%);
+  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color-alt: hsl(var(--hue) 57% 53%);
+  --title-color: hsl(var(--hue) 41% 10%);
+  --text-color: hsl(0 0% 46%);
+  --text-color-light: hsl(0 0% 98%);
+  --body-color: hsl(0 0% 98%);
+}
+/* BASE */
+body {
+  font: 400 1rem 'DM Sans', sans-serif;
+  color: var(--text-color);
+  background: var(--body-color);
+  -webkit-font-smoothing: antialiased;
+  margin-left: 5%;
+  margin-top: 2%;
+  justify-content: center;
+}
+
+.section {
+  padding: 2.5rem 0;
+}
+
+.principal li {
+  display: inline-block;
+}
+fieldset {
+  border: none;
+}
+button {
+  background-color: var(--base-color);
+  color: var(--text-color);
+  height: 1.75rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 2rem;
+  border-radius: 0.25rem;
+  font: 500 0.75rem 'DM Sans', sans-serif;
+  transition: background 0.3s;
+}
+button:hover {
+  background: var(--base-color-alt);
+}
+.campo {
+  margin-bottom: 1em;
+}
+.campo label {
+  margin-bottom: 0.2em;
+}
+.checkbox {
+  margin-bottom: 1rem;
+}
+.checkbox label {
+  margin: 1rem;
+}

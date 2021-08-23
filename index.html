@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <!---INFOS PAGINA-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Primeiros passos</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="titulo">Primeiros passos!</h1>
+      <h2 id="subtitulo">Lógica de programação</h2>
+      <br />
+    </div>
+    <section>
+      <p>
+        Esta página tem objtetivo de mostrar os resultados dos exercícios
+        básicos de lógica de programação.
+        <strong>A visualização do código ficará disponível em breve.</strong>
+      </p>
+      <nav class="principal">
+        <ul>
+          <li>
+            <a href="#modulo1">Módulo 1</a>
+          </li>
+          <li>
+            <a href="#modulo2">Módulo 2</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="section">
+        <h3 id="modulo1">Módulo 1</h3>
+        <h4 class="definicao">Exemplo de formulário</h4>
+        <br />
+        <p>
+          A idéia é que o usário preencha os campos para que o computador
+          retorne uma confirmação.
+        </p>
+        <br />
+        <p>Escreva o seu nome e um número que deseja guardar:</p>
+        <form>
+          <fieldset class="grupo">
+            <div class="campo">
+              <label for="nome"><strong>Nome:</strong></label>
+              <input type="text" id="nome" required />
+            </div>
+            <div class="campo">
+              <label for="numero"
+                ><strong>Número que deseja guardar:</strong>
+              </label>
+              <input type="number" id="numero" required />
+            </div>
+          </fieldset>
+        </form>
+        <div id="confirmaResposta"></div>
+        <button class="button" type="button" id="botaoEnviar">Enviar</button>
+      </section>
+      <section class="section">
+        <h3 id="modulo2">Módulo 2</h3>
+        <p>Escreva dois números para o cálculo</p>
+        <div>
+          <ul>
+            <li>
+              <label
+                ><strong>Primeiro número:</strong>
+                <input type="number" id="primeiroNumero" required
+              /></label>
+            </li>
+            <li>
+              <label
+                ><strong>Segundo número</strong>
+                <input type="number" id="segundoNumero" required
+              /></label>
+            </li>
+          </ul>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" id="soma" value="soma" />soma
+            </label>
+            <label
+              ><input
+                type="checkbox"
+                id="subtracao"
+                value="subtracao"
+              />subtração
+            </label>
+            <label
+              ><input
+                type="checkbox"
+                id="multiplicacao"
+                value="multiplicacao"
+              />multiplicação</label
+            >
+            <label
+              ><input type="checkbox" id="divisao" value="divisao" />divisão
+            </label>
+            <label
+              ><input
+                type="checkbox"
+                id="potencia"
+                value="potência"
+              />potência</label
+            >
+            <label><input type="checkbox" id="raiz" value="raiz" />raiz</label>
+          </div>
+          <button type="button" id="calcular">Calcular</button>
+          <div id="resultado"></div>
+          <div>
+            <p>Você deseja realizar uma operação de média aritmética?</p>
+            <label><input type="radio" id="sim" value="sim" />sim </label>
+            <label><input type="radio" id="nao" value="nao" />não</label>
+            <div>
+              <label for="numero"
+                ><strong>Quantos números serão somados?</strong
+                ><input type="number" id="quantidadeNumeros"
+              /></label>
+            </div>
+          </div>
+        </div>
+        <button type="submit" id="calculaMedia">Calcular</button>
+      </section>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
